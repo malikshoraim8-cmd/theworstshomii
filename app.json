@@ -63,6 +63,34 @@
       "description": "Disable start message",
       "required": false,
       "value": "false"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Exact Heroku app name chosen during deployment (not the display title). Needed for Levanter platform detection.",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Your own Heroku account API key. Needed by this Levanter version for Heroku platform detection and optional app-management features. Keep private; never reuse the repository owner's key.",
+      "required": true
+    },
+    "KOYEB": {
+      "description": "Set true only when running on Koyeb; otherwise leave false.",
+      "required": false,
+      "value": "false"
+    },
+    "KOYEB_NAME": {
+      "description": "Koyeb service name, if using Koyeb.",
+      "required": false,
+      "value": ""
+    },
+    "KOYEB_API": {
+      "description": "Koyeb API key, if using Koyeb; keep private.",
+      "required": false,
+      "value": ""
+    },
+    "VPS": {
+      "description": "Set true only when running on a VPS; leave false for Heroku.",
+      "required": false,
+      "value": "false"
     }
   },
   "formation": {
