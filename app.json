@@ -1,0 +1,75 @@
+{
+  "name": "the-worst-shomii",
+  "description": "The Worst Shomii — Levanter WhatsApp bot deployment",
+  "repository": "https://github.com/malikshoraim8-cmd/theworstshomii",
+  "logo": "",
+  "keywords": [
+    "nodejs",
+    "whatsapp",
+    "levanter",
+    "bot"
+  ],
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Your Levanter session ID. Keep it private.",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "required": false,
+      "value": "."
+    },
+    "SUDO": {
+      "description": "Admin number(s), as required by the bot source",
+      "required": false,
+      "value": ""
+    },
+    "STICKER_PACKNAME": {
+      "description": "Sticker pack name",
+      "required": false,
+      "value": "𝛅ͱ꧊๏̚ɱꪸɪ፝֟ɪ፝֟"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Show bot number as online",
+      "required": false,
+      "value": "false"
+    },
+    "WARN_LIMIT": {
+      "description": "Maximum warnings before action",
+      "required": false,
+      "value": "3"
+    },
+    "BOT_LANG": {
+      "description": "Bot language",
+      "required": false,
+      "value": "en"
+    },
+    "REJECT_CALL": {
+      "description": "Automatically reject calls",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "Automatically view statuses",
+      "required": false,
+      "value": "false"
+    },
+    "SEND_READ": {
+      "description": "Send read receipts",
+      "required": false,
+      "value": "false"
+    },
+    "DISABLE_START_MESSAGE": {
+      "description": "Disable start message",
+      "required": false,
+      "value": "false"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
